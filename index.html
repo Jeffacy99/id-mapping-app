@@ -47,8 +47,8 @@
             <form class="">
               <!--Form start -->
               <!--Add profile image-->
-              <input type="file" onchange="readURL(this);" />
-              <img id="blah" src="https://bit.ly/33GVkow" alt="your image" />
+              <!-- <input type="file" onchange="readURL(this);" />
+              <img id="blah" src="https://bit.ly/33GVkow" alt="your image" /> -->
               <div class="form-group">
                 <label for="first-name">First Name:</label>
                 <!--First name -->
@@ -90,6 +90,16 @@
                 <input type="radio" value="male" name="gender" checked />Male
                 <input type="radio" value="female" name="gender" />Female
               </div>
+
+              <div class=""> 
+                  <h2>Image function</h2>
+                  <div class="col-md-6">
+                      <input id="upload" type="file" onChange="han()" />
+                      <img id="uploadImage" src="" />
+    
+                  </div>
+    
+                </div>
               <button type="submit" id="create" class="btn btn-dark">
                 submit
               </button>
@@ -98,44 +108,54 @@
             <!--Form End -->
           </div>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-4 text-center">
           <h3>Your ID</h3>
           <div class="card text-center">
             <div class="card-header">
               Moringa School ID
             </div>
-            <div class="card-body text-left">
-              <div class="">
-                <h5 class="card-title"></h5>
-                <h5>
-                  <span class="badge badge-primary"
-                    >Names :&nbsp;&nbsp; &nbsp; &nbsp;:&nbsp;&nbsp;</span
-                  ><span id="names"></span>
-                </h5>
-                <h5>
-                  <span class="badge badge-primary"
-                    >Adm No :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                  ><span id="admno"></span>
-                </h5>
-                <h5>
-                  <span class="badge badge-primary"
-                    >Course :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                  ><span id="course1"></span>
-                </h5>
-                <h5>
-                  <span class="badge badge-primary"
-                    >ID No
-                    &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                  ><span id="idno"></span>
-                </h5>
-                <h5>
-                  <span class="badge badge-primary"
-                    >Gender :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span
-                  ><span id="gender1"></span>
-                </h5>
-                <!-- <h5><span class="badge badge-primary">Duration</span><span id="duration"></span></h5> -->
-              </div>
+            <div class="row">
+                <div class="card-body col-md-8 text-left">
+                    <div class="">
+                      <h5 class="card-title"></h5>
+                      <h5>
+                        <span class="badge badge-primary"
+                          >Names :&nbsp;&nbsp; &nbsp; &nbsp;:&nbsp;&nbsp;</span
+                        ><span id="names"></span>
+                      </h5>
+                      <h5>
+                        <span class="badge badge-primary"
+                          >Adm No :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
+                        ><span id="admno"></span>
+                      </h5>
+                      <h5>
+                        <span class="badge badge-primary"
+                          >Course :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
+                        ><span id="course1"></span>
+                      </h5>
+                      <h5>
+                        <span class="badge badge-primary"
+                          >ID No
+                          &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
+                        ><span id="idno"></span>
+                      </h5>
+                      <h5>
+                        <span class="badge badge-primary"
+                          >Gender :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span
+                        ><span id="gender1"></span>
+                      </h5>
+                      <!-- <h5><span class="badge badge-primary">Duration</span><span id="duration"></span></h5> -->
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-left image-fluid pt-3">
+                    <img id="pic" src="" alt="">
+                    <div id="idimg">
+
+                    </div>
+
+                  </div>
             </div>
+            
             <div class="card-footer text-muted">
               ID valid academic year : 2019/2020
             </div>

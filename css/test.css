@@ -1,7 +1,8 @@
-#blah{
-    height: 70px;
-    width: 70px;
+#blah,#uploadImage,#pic{
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
+    
 }
 
 #nav-top a{
@@ -9,8 +10,4 @@ color: whitesmoke
 }
 #nav-top{
     background-color: #637C33;
-}
-.zoom:hover {
-  transform: scale(1.5);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
