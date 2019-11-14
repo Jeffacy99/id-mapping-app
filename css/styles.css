@@ -1,0 +1,36 @@
+
+/* #pic{
+    height: 500px;
+    width: 3px;
+} */
+
+h1{
+  text-decoration: underline;
+  font-size:22px;
+
+}
+
+img{
+  height:80px;
+  width:80px;
+}
+input[type=file]{
+padding:10px;
+background:#ffffff;}
+
+.jumbotron {
+    background: url(../images/dark.jpg) ;
+    font-family: 'Big Shoulders Text', cursive;
+}
+.form-group {
+    color: orangered;
+}
+.color{
+    color: white;
+}
+#gender{
+    color:white;
+}
+.body{
+  font-family: 'Big Shoulders Text', cursive;
+}
