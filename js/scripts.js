@@ -1,18 +1,22 @@
-// // function for displaing image 
-// function readURL(input) {
-//     if (input.files && input.files[0]) {
-//         var reader = new FileReader();
+//user interface or front end
 
-//         reader.onload = function (e) {
-//             $('#blah')
-//                 .attr('src', e.target.result);
-//                 $('#idimg').prepend('<img id="theImg" src="https://bit.ly/33GVkow" />')
-//         };
-
-//         reader.readAsDataURL(input.files[0]);
-//     }
-// }
-//Bussiness Logic
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 
 function han() 
 {
