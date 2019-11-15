@@ -1,177 +1,164 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <link />
-    <title>ID MAPPING APP</title>
-    <!--Font links-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap"
-      rel="stylesheet"
-    />
-    <!--Styles links-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/test.css" />
-    <!--Scripts links-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class=" col-md-12 bg-secondary jumbotron">
-          <nav  id="nav-top" class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center">
-              <a class="navbar-brand" href="#">
-                  <img src="images/moringaschool.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                  ID Mapping App
-                </a>
-            <a class=" navbar-brand btn btn-success" href="#">About </a>
-            <a class=" navbar-brand btn btn-success"href="#">Features  </a>
-            <a class="navbar-brand btn btn-success"href="#"> Support </a>
-          </nav>
-        </div>
-        <div class="Col-md-6">
-          <div class=" jumbotron">
-            <h2>ID MAPPING</h2>
-            <form class="">
-              <!--Form start -->
-              <!--Add profile image-->
-              <!-- <input type="file" onchange="readURL(this);" />
-              <img id="blah" src="https://bit.ly/33GVkow" alt="your image" /> -->
-              <div class="form-group">
-                <label for="first-name">First Name:</label>
-                <!--First name -->
-                <input
-                  id="first-name"
-                  class="form-control"
-                  type="text"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="second-name">Second Name:</label>
-                <!--Second name -->
-                <input
-                  id="second-name"
-                  class="form-control"
-                  type="text"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="adm-no">Admission Number:</label>
-                <!--Admission number -->
-                <input id="adm-no" class="form-control" type="text" required />
-              </div>
-              <div class="form-group">
-                <label for="course">Course Name:</label>
-                <!--Course name-->
-                <input id="course" class="form-control" type="text" required />
-              </div>
-              <div class="form-group">
-                <label for="id-no">National ID no:</label>
-                <!--National ID number -->
-                <input id="id-no" class="form-control" type="text" required />
-              </div>
-              <div class="" id="gender">
-                <label>Gender : </label>
-                <!--Gender radio buttons-->
-                <input type="radio" value="male" name="gender" checked />Male
-                <input type="radio" value="female" name="gender" />Female
-              </div>
 
-              <div class=""> 
-                  <h2>Image function</h2>
-                  <div class="col-md-6">
-                      <input id="upload" type="file" onChange="han()" />
-                      <img id="uploadImage" src="" />
-    
-                  </div>
-    
+<head>
+  <meta charset="utf-8" />
+  <link />
+  <title>ID MAPPING APP</title>
+  <!--Font links-->
+  <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet" />
+  <!--Styles links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/test.css" />
+ 
+</head>
+
+<body class="bg-secondary">
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-md-12 bg-secondary">
+        <nav id="nav-top" class="navbar navbar-expand-lg navbar-light bg-secondary justify-content-center row">
+          <a class="navbar-brand col text-right" href="#">
+            <img src="images/moringaschool.png" width="50" height="50" class="d-inline-block align-top" alt="" />
+            ID Mapping App
+          </a>
+          <div class="col d-flex text-left"><a class=" navbar-brand btn btn-success" href="#">About </a>
+            <a class=" navbar-brand btn btn-success" href="#">Features </a>
+            <a class="navbar-brand btn btn-success" href="#"> Support </a></div>
+          
+        </nav>
+      </div>
+      <div class=" col-md-12 bg-info row">
+          <div class="col-md-6 p-2">
+              <h2>ID MAPPING</h2>
+              <form class="col-md-6">
+                <!--Form start -->
+                <!--Add profile image-->
+                <!-- <input type="file" onchange="readURL(this);" />
+                  <img id="blah" src="https://bit.ly/33GVkow" alt="your image" /> -->
+                <div class="form-group">
+                  <label for="first-name">First Name:</label>
+                  <!--First name -->
+                  <input id="first-name" class="form-control" type="text" required />
                 </div>
-              <button type="submit" id="create" class="btn btn-dark">
-                submit
-              </button>
-              <!--button submit -->
-            </form>
-            <!--Form End -->
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <h3>Your ID</h3>
-          <div class="card text-center">
-            <div class="card-header">
-              Moringa School ID
+                <div class="form-group">
+                  <label for="second-name">Second Name:</label>
+                  <!--Second name -->
+                  <input id="second-name" class="form-control" type="text" required />
+                </div>
+                <div class="form-group">
+                  <label for="adm-no">Admission Number:</label>
+                  <!--Admission number -->
+                  <input id="adm-no" class="form-control" type="text" required />
+                </div>
+                <div class="form-group">
+                  <label for="course">Course Name:</label>
+                  <!--Course name-->
+                  <input id="course" class="form-control" type="text" required />
+                </div>
+                <div class="form-group">
+                  <label for="id-no">National ID no:</label>
+                  <!--National ID number -->
+                  <input id="id-no" class="form-control" type="number" required minlength="9" />
+                </div>
+                <div class="" id="gender">
+                  <label>Gender : </label>
+                  <!--Gender radio buttons-->
+                  <input type="radio" value="male" name="gender" checked />Male
+                  <input type="radio" value="female" name="gender" />Female
+                </div>
+    
+                <div class="row d-flex">
+                  <!-- <h2>Image function</h2> -->
+                  <!-- <div class="col-md-6"> -->
+                    <input id="upload" type="file" onChange="han()" />
+                    <img id="uploadImage" src="" />
+                  <!-- </div> -->
+                </div>
+                <button type="submit" id="create" class="btn btn-secondary">
+                  Create Id
+                </button>
+                <!--button submit -->
+              </form>
+              <!--Form End -->
             </div>
-            <div class="row">
-                <div class="card-body col-md-8 text-left">
-                    <div class="">
-                      <h5 class="card-title"></h5>
-                      <h5>
-                        <span class="badge badge-primary"
-                          >Names :&nbsp;&nbsp; &nbsp; &nbsp;:&nbsp;&nbsp;</span
-                        ><span id="names"></span>
-                      </h5>
-                      <h5>
-                        <span class="badge badge-primary"
-                          >Adm No :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                        ><span id="admno"></span>
-                      </h5>
-                      <h5>
-                        <span class="badge badge-primary"
-                          >Course :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                        ><span id="course1"></span>
-                      </h5>
-                      <h5>
-                        <span class="badge badge-primary"
-                          >ID No
-                          &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span
-                        ><span id="idno"></span>
-                      </h5>
-                      <h5>
-                        <span class="badge badge-primary"
-                          >Gender :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span
-                        ><span id="gender1"></span>
-                      </h5>
-                      <!-- <h5><span class="badge badge-primary">Duration</span><span id="duration"></span></h5> -->
+
+            <div class="col-md-4 text-center">
+                <h3>Your ID</h3>
+                <div class="card text-center">
+                  <div class="card-header d-flex">
+                      <div class="col-md-4 ">
+                          <img id="logo" src="images/moringaschool.png" alt="moringa-logo" />
+                        </div>
+                    <div class="col-md-8 p-2 text-left" id="headt">
+                      Student ID
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="card-body col-md-8 ">
+                      <div class="">
+                        <h5 class="card-title">Student Details</h5>
+                        <h5 class="d-flex justify-content-between">
+                          <span class="badge badge-primary col-md-4 text-left">Names :&nbsp;&nbsp; &nbsp; &nbsp;:&nbsp;&nbsp;</span>
+                          <span
+                            id="names" class="col-md-6 bg-info "></span>
+                        </h5>
+                        <h5 class="d-flex justify-content-between">
+                          <span class="badge badge-primary col-md-4 text-left">Adm No :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span><span
+                            id="admno"class="col-md-6 bg-info "></span>
+                        </h5>
+                        <h5 class="d-flex justify-content-between">
+                          <span class="badge badge-primary col-md-4 text-left">Course :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span><span
+                            id="course1"class="col-md-6 bg-info "></span>
+                        </h5>
+                        <h5 class="d-flex justify-content-between">
+                          <span class="badge badge-primary col-md-4 text-left">ID No
+                            &nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</span><span id="idno"class="col-md-6 bg-info "></span>
+                        </h5>
+                        <h5 class="d-flex justify-content-between">
+                          <span class="badge badge-primary col-md-4 text-left">Gender :&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</span><span
+                            id="gender1" class="col-md-6 bg-info "></span>
+                        </h5>
+                        <!-- <h5><span class="badge badge-primary">Duration</span><span id="duration"></span></h5> -->
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-left image-fluid pt-3">
+                      <img id="pic" src="" alt="" />
+                      <div id="idimg"></div>
                     </div>
                   </div>
-                  <div class="col-md-4 text-left image-fluid pt-3">
-                    <img id="pic" src="" alt="">
-                    <div id="idimg">
-
-                    </div>
-
+        
+                  <div class="card-footer text-muted">
+                    ID valid academic year : 2019/2020
                   </div>
-            </div>
-            
-            <div class="card-footer text-muted">
-              ID valid academic year : 2019/2020
-            </div>
-          </div>
+                </div>
+              </div>
+          
         </div>
-        <!-- footer -->
-        <div class="container-fluid bg-secondary">
-      <!--<a href="#bout"> <img src="assets/mouse_click.png" alt=""> https://www.facebook.com </a>-->
+      <div class="Col-md-12">
+        
+      </div>
+      
+      <!-- footer -->
+      <div class="col-md-12 bg-secondary d-flex justify-content-around p-5">
+        <!--<a href="#bout"> <img src="assets/mouse_click.png" alt=""> https://www.facebook.com </a>-->
 
-      <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="" class="img-fluid zoom"></a>
-      <a href="https://www.pinterest.com"><img src="images/icons/pinterest.png" alt="" class="img-fluid zoom"></a>
-      <a href="https://www.skype.com"><img src="images/icons/skype.png" alt="" class="img-fluid zoom"></a>
-      <a href="https://twitter.com"><img src="images/icons/twitter.png" alt="" class="img-fluid zoom"></a>
-      <a href="https://www.youtube.com/"><img src="images/icons/you_tube.png" alt="" class="img-fluid zoom"></a>
-    </div>
+        <a href="https://www.facebook.com"><img src="images/icons/facebook.png" alt="" class="img-fluid zoom" /></a>
+        <a href="https://www.pinterest.com"><img src="images/icons/pinterest.png" alt="" class="img-fluid zoom" /></a>
+        <a href="https://www.skype.com"><img src="images/icons/skype.png" alt="" class="img-fluid zoom" /></a>
+        <a href="https://twitter.com"><img src="images/icons/twitter.png" alt="" class="img-fluid zoom" /></a>
+        <a href="https://www.youtube.com/"><img src="images/icons/you_tube.png" alt="" class="img-fluid zoom" /></a>
       </div>
     </div>
-  </body>
+  </div>
+   <!--Scripts links-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="js/scripts.js"></script>
+</body>
+
 </html>
